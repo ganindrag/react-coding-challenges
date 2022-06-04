@@ -1,4 +1,4 @@
-import React, { useState, Component } from 'react';
+import React, { useState, PureComponent } from 'react';
 import RocketCore from './RocketCore';
 
 const FunctionalRocket = React.memo(() => {
@@ -7,7 +7,7 @@ const FunctionalRocket = React.memo(() => {
   return <RocketCore initialLaunchTime={initialLaunchTime} />;
 });
 
-class ClassRocket extends Component {
+class ClassRocket extends PureComponent {
   constructor(props) {
     super(props);
 
